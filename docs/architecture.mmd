@@ -1,0 +1,32 @@
+graph TD
+    subgraph User
+        A[Order Request] --> B{SmartOrderRouter}
+    end
+
+    subgraph SmartOrderRouter
+        B --> C{Liquidity Fetcher}
+        C --> D1[Binance API]
+        C --> D2[Coinbase API]
+        C --> D3[Kraken API]
+
+        B --> E{Optimizer}
+        E -- Liquidity Data --> E
+        E -- Optimal Route --> F{Executor}
+    end
+
+    subgraph Execution
+        F --> G1[Split Order 1]
+        F --> G2[Split Order 2]
+        F --> G3[Split Order ...]
+    end
+
+    subgraph Analytics
+        H[Execution Results] --> I{Analytics Engine}
+        I --> J[Performance Metrics]
+        I --> K[Backtest Summary]
+    end
+
+    G1 --> H
+    G2 --> H
+    G3 --> H
+
