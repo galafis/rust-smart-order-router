@@ -5,6 +5,7 @@ use async_trait::async_trait;
 use rust_decimal_macros::dec;
 
 pub struct CoinbaseExchange {
+    #[allow(dead_code)]
     client: reqwest::Client,
 }
 

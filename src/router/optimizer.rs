@@ -1,6 +1,5 @@
 use crate::types::{Liquidity, Order, OrderSplit, RoutingResult};
 use anyhow::{Context, Result};
-use rust_decimal::Decimal;
 use rust_decimal_macros::dec;
 
 /// Optimize routing for a buy order

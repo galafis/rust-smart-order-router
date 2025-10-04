@@ -1,6 +1,6 @@
 # Smart Order Router (SOR) em Rust
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/GabrielDemetrius/rust-smart-order-router/rust.yml?branch=main&style=for-the-badge) ![License](https://img.shields.io/github/license/GabrielDemetrius/rust-smart-order-router?style=for-the-badge) ![Crates.io](https://img.shields.io/crates/v/smart-order-router?style=for-the-badge)
+![Build Status](https://img.shields.io/github/actions/workflow/status/galafis/rust-smart-order-router/rust.yml?branch=main&style=for-the-badge) ![License](https://img.shields.io/github/license/galafis/rust-smart-order-router?style=for-the-badge) ![Crates.io](https://img.shields.io/crates/v/smart-order-router?style=for-the-badge)
 
 ---
 
@@ -61,7 +61,7 @@ The diagram below illustrates the general architecture of the Smart Order Router
 
 1. Clone o repositório:
    ```sh
-   git clone https://github.com/GabrielDemetrius/rust-smart-order-router.git
+   git clone https://github.com/galafis/rust-smart-order-router.git
    cd rust-smart-order-router
    ```
 
@@ -115,5 +115,5 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICEN
 **Gabriel Demetrios Lafis**
 
 - [LinkedIn](https://www.linkedin.com/in/gabriel-demetrius/)
-- [GitHub](https://github.com/GabrielDemetrius)
+- [GitHub](https://github.com/galafis)
 

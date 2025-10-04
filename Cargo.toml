@@ -5,7 +5,7 @@ edition = "2021"
 authors = ["Gabriel Demetrios Lafis"]
 description = "High-performance smart order router for optimal trade execution across multiple exchanges"
 license = "MIT"
-repository = "https://github.com/GabrielDemetrius/rust-smart-order-router"
+repository = "https://github.com/galafis/rust-smart-order-router"
 keywords = ["trading", "finance", "order-routing", "execution", "algorithmic-trading"]
 categories = ["finance", "algorithms"]
 
