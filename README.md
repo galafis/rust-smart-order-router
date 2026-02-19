@@ -87,6 +87,24 @@ O sistema é composto por 4 módulos principais:
 3. **Analytics Module** - Cálculo de métricas e performance
 4. **Backtesting Module** - Simulação e testes históricos
 
+```mermaid
+flowchart TD
+    A([Ordem de Entrada]) --> B[Análise de Venues]
+    B --> C{Múltiplas Exchanges}
+    C --> D1[Binance\nOrder Book]
+    C --> D2[Coinbase\nOrder Book]
+    C --> D3[Kraken\nOrder Book]
+    D1 --> E[Cálculo de Rota Ótima\nVWAP / TWAP / Best Price]
+    D2 --> E
+    D3 --> E
+    E --> F[Divisão de Ordens\nOrder Splitting]
+    F --> G1[Execução Parcial\nExchange A]
+    F --> G2[Execução Parcial\nExchange B]
+    G1 --> H[Consolidação de Execuções]
+    G2 --> H
+    H --> I([Confirmação & Relatório\nSlippage · Fill Rate · Custo])
+```
+
 ---
 
 ## 🛠️ Tecnologias
